@@ -52,8 +52,6 @@ public class GeminiService {
 
 		HttpHeaders headers = new HttpHeaders();
 
-		//headers.setBearerAuth(apiKey);
-		//headers.set("x-goog-api-key", apiKey);
 		headers.setContentType(MediaType.APPLICATION_JSON);
 
 		HttpEntity<String> request = new HttpEntity<>(body, headers);

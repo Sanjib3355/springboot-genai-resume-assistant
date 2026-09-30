@@ -12,15 +12,18 @@ import com.sanjib.ai.api.service.PdfService;
 
 import org.springframework.web.bind.annotation.*;
 
-
-
 @RestController
 @RequestMapping("/chats")
 public class ChatController {
 
-    @Autowired
-    private PdfService pdfService;
+	private final PdfService pdfService;
+	
+    public ChatController (PdfService pdfService) {
 
+    this.pdfService = pdfService;
+    
+    }
+    
     @Autowired
     private GeminiService geminiService;
 

@@ -27,8 +27,8 @@ public class ChatController {
     @Autowired
     private GeminiService geminiService;
 
-    @GetMapping("/hello")
-    public String hello() {
+    @GetMapping("/gemini")
+    public String gemini() {
 
         return "Gemini Project Working";
     }
